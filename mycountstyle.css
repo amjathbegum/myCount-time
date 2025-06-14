@@ -11,12 +11,11 @@
 .container-two{
     width:800px;
     height: 600px;
-    background-color: rgb(182, 125, 235);
+    background-color: rgb(245, 52, 52);
 }
 .header{
-    flex-wrap: wrap;
+   
      justify-content: space-around;
-    flex-direction: row-reverse;
     justify-items: center;
     align-items: center;
     height: 180px;
@@ -29,14 +28,27 @@
    
     width:300px;
     height: 120px;
-    background-color: white;
+  
 }
+#countSpan{
+    display: block;
+    text-align: center;
+    font-size: 8em;
+    color:rgb(12, 12, 12);
+    background-color: rgb(237, 252, 213);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sizedis {
+    text-align: center;
+    font-weight: bold;
+}
+
 #btnContainer{
     text-align: center;
 }
 .button {
     position: relative;
-    top:10px;
+    top:35px;
     padding: 10px 20px;
     font-size: 1.5em;
     color: white;
@@ -51,3 +63,67 @@
 .button:hover {
     background-color: hsl(214, 100%, 56%);
 }
+*{
+    box-sizing: border-box;
+}
+.main-boxes{
+    display:flex;
+    flex-wrap:wrap;
+    position: relative;
+    justify-content: center;
+    top: 60px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(243, 214, 175);
+}
+.time-box{
+    width:250px;
+    height:500px;
+    background-color: #dfc8c8;
+
+}
+.count-box{
+    width:250px;
+    height:500px;
+    background-color: #dfc8c8;
+
+}
+.close-box{
+    width:250px;
+    height:500px;
+    background-color: rgb(132, 216, 116);
+}
+
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 32px 12px;
+    list-style-type: none;
+    background: #dfc8c8;
+    right:40px;
+    width:250px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+ul li:hover{
+    background: #ddd;
+}
+ul li.checked{
+    background: #888;
+    color: #fff;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
