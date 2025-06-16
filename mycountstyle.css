@@ -100,7 +100,12 @@
     background-color: #dfc8c8;
 
 }
+.close-box{
+    width: 250px;
+    height: 500px;
+    background-color: #dfc8c8;
 
+}
 
 ul li {
     cursor: pointer;

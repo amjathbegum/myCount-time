@@ -27,17 +27,19 @@ increaseBtn.addEventListener('click', function () {
       node.appendChild(textnode);
       document.getElementById("myList").appendChild(node);
       //const numbernode = document.createTextNode(count);
-      const numbernode = document.createElement("li");
 
+      const numbernode = document.createElement("li");
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
 
-      const txt = document.createTextNode("\u00D7");
-      numbernode.className = "close";
-      numbernode.appendChild(txt);
-
-
+      
+       const closenode = document.createElement("li");
+      const  myclosetxt = document.createTextNode("\u00D7");
+      closenode.appendChild(myclosetxt);
+      document.getElementsById("myclose").appendChild(closenode);
+      
+     
       document.getElementById("myNum").addEventListener("click", function () {
         var close = document.getElementsByClassName("close");
         var i;
