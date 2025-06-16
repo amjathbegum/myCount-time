@@ -5,51 +5,39 @@ const myList = document.getElementById("myList");
 const myNum = document.getElementById("myNum");
 const myremove = document.getElementById("myremove");
 
-
-
-
-
-
-
 let count = 0;
-
- 
 
 
 increaseBtn.addEventListener('click', function () {
   count++;
 
-
-
-
-
-const numbers = [10, 20, 30, 40, 50, 60];
+  const numbers = [10, 20, 30, 40, 50, 60];
   for (let i = 0; i < numbers.length; i++) {
 
     let numarr = numbers[i];
     if (count == numarr) {
-       
+
 
 
       const node = document.createElement("li");
-      
+
       const d = new Date();
       const textnode = document.createTextNode(d.toLocaleTimeString());
-    
+
       node.appendChild(textnode);
       document.getElementById("myList").appendChild(node);
       //const numbernode = document.createTextNode(count);
       const numbernode = document.createElement("li");
-   
+
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
 
       const txt = document.createTextNode("\u00D7");
-      numbernode.className="close";
+      numbernode.className = "close";
       numbernode.appendChild(txt);
 
-    
+
       document.getElementById("myNum").addEventListener("click", function () {
         var close = document.getElementsByClassName("close");
         var i;
@@ -62,28 +50,30 @@ const numbers = [10, 20, 30, 40, 50, 60];
             element.remove();
             const Numelement = document.getElementById("myNum");
             Numelement.remove();
-            //this.style.display="none";
+        
+            close[i].remove();
             var div = this.parentElement;
             div.style.display = "none";
+
           }
         }
       });
 
 
 
-  /*
-      removeBtn.addEventListener('click', function () {
-        myList.removeChild(node);
-        myNum.removeChild(numbernode);
-        myList.removeChild(removeBtn);
-        myNum.removeChild(removeBtn);
-
-
-
-   
-
-  
-      });*/
+      /*
+          removeBtn.addEventListener('click', function () {
+            myList.removeChild(node);
+            myNum.removeChild(numbernode);
+            myList.removeChild(removeBtn);
+            myNum.removeChild(removeBtn);
+    
+    
+    
+       
+    
+      
+          });*/
 
 
     }
@@ -107,7 +97,7 @@ const numbers = [10, 20, 30, 40, 50, 60];
 
   countSpan.textContent = count;
   increseBtn.addEventListener('click', function () {
-  decreaseBtn.style.display = 'inline-block';
+    decreaseBtn.style.display = 'inline-block';
   });
 });
 
