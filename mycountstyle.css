@@ -100,12 +100,6 @@
     background-color: #dfc8c8;
 
 }
-.close-box{
-    width: 250px;
-    height: 500px;
-    background-color: #dfc8c8;
-
-}
 
 ul li {
     cursor: pointer;
@@ -140,4 +134,10 @@ ul li::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+}
+.close {
+ 
+    background-color: red;
+    position: relative;
+ 
 }

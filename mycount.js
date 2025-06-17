@@ -3,7 +3,7 @@ const increaseBtn = document.getElementById("IncreaseBtn");
 const resetBtn = document.getElementById("resetBtn");
 const myList = document.getElementById("myList");
 const myNum = document.getElementById("myNum");
-const myremove = document.getElementById("myremove");
+const myclose = document.getElementById("myclose");
 
 let count = 0;
 
@@ -33,15 +33,21 @@ increaseBtn.addEventListener('click', function () {
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
 
-      
+
+const txt = document.createTextNode("\u00D7");
+closenode.className="close";
+closenode.appendChild(txt);
+  document.getElementById("myclose").appendChild(numbernode);
+
+  /*      
        const closenode = document.createElement("li");
       const  myclosetxt = document.createTextNode("\u00D7");
       closenode.appendChild(myclosetxt);
       document.getElementsById("myclose").appendChild(closenode);
-      
+      */
      
       document.getElementById("myNum").addEventListener("click", function () {
-        var close = document.getElementsByClassName("close");
+        var close = document.getElementsByClassName("myclose");
         var i;
         for (i = 0; i < close.length; i++) {
 
