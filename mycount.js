@@ -35,10 +35,11 @@ increaseBtn.addEventListener('click', function () {
           
 
     
+  
       var txt = document.createTextNode("\u00D7");
       myNum.className="close";
       myNum.appendChild(txt);
-      li.appendChild(myNum);
+      numbernode.appendChild(myNum);
  
       
      
