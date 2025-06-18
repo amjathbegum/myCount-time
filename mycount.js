@@ -7,6 +7,28 @@ const myclose = document.getElementById("myclose");
 
 let count = 0;
 
+  var myNodelist = document.getElementsByTagName("LI");
+   var i;
+
+   for(i=0;i<myNodelist.length;i++){
+    var span = document.createElement("LI");
+    var txt = document.createTextNode("\u00D7");
+    span.className="close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+   }
+
+   
+  var close = document.getElementsByClassName("close");
+  var i;
+  for(i=0;i<close.length;i++){
+    close[i].onclick = function()  {
+        var div = this.parentElement;
+        div.style.display = "none"
+    }
+  }
+
+
 
 increaseBtn.addEventListener('click', function () {
   count++;
@@ -19,7 +41,7 @@ increaseBtn.addEventListener('click', function () {
 
 
 
-      const node = document.createElement("li");
+      const node = document.createElement("LI");
 
       const d = new Date();
       const textnode = document.createTextNode(d.toLocaleTimeString());
@@ -28,16 +50,17 @@ increaseBtn.addEventListener('click', function () {
       document.getElementById("myList").appendChild(node);
       //const numbernode = document.createTextNode(count);
 
-      const numbernode = document.createElement("li");
+      const numbernode = document.createElement("LI");
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
 
+      
 
 const txt = document.createTextNode("\u00D7");
 closenode.className="close";
 closenode.appendChild(txt);
-  document.getElementById("myclose").appendChild(numbernode);
+ 
 
   /*      
        const closenode = document.createElement("li");
@@ -47,7 +70,7 @@ closenode.appendChild(txt);
       */
      
       document.getElementById("myNum").addEventListener("click", function () {
-        var close = document.getElementsByClassName("myclose");
+        var close = document.getElementsByClassName("close");
         var i;
         for (i = 0; i < close.length; i++) {
 
