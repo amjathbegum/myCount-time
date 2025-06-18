@@ -7,11 +7,11 @@ const myclose = document.getElementById("myclose");
 
 let count = 0;
 
-  var myNodelist = document.getElementsByTagName("LI");
+  var myNodelist = document.getElementsByTagName("li");
    var i;
 
    for(i=0;i<myNodelist.length;i++){
-    var span = document.createElement("LI");
+    var span = document.createElement("li");
     var txt = document.createTextNode("\u00D7");
     span.className="close";
     span.appendChild(txt);
@@ -41,7 +41,7 @@ increaseBtn.addEventListener('click', function () {
 
 
 
-      const node = document.createElement("LI");
+      const node = document.createElement("li");
 
       const d = new Date();
       const textnode = document.createTextNode(d.toLocaleTimeString());
@@ -50,7 +50,7 @@ increaseBtn.addEventListener('click', function () {
       document.getElementById("myList").appendChild(node);
       //const numbernode = document.createTextNode(count);
 
-      const numbernode = document.createElement("LI");
+      const numbernode = document.createElement("li");
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
