@@ -44,10 +44,6 @@ increaseBtn.addEventListener('click', function () {
       numbernode.appendChild(span);
 
    
-       
-     
-   
-  
 
 
   /*      
@@ -56,21 +52,13 @@ increaseBtn.addEventListener('click', function () {
       closenode.appendChild(myclosetxt);
       document.getElementsById("myclose").appendChild(closenode);
       */
-     /*
+        
       document.getElementById("myNum").addEventListener("click", function () {
         var close = document.getElementsByClassName("close");
         var i;
         for (i = 0; i < close.length; i++) {
 
-
           close[i].onclick = function () {
-
-            const element = document.getElementById("myList");
-            element.remove();
-            const Numelement = document.getElementById("myNum");
-            Numelement.remove();
-        
-            close[i].remove();
             var div = this.parentElement;
             div.style.display = "none";
 
