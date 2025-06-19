@@ -146,11 +146,8 @@ ul li::before {
     right:0;
     top: 5px;
     text-align: center;
-  
-
 }
 .close:hover {
   background-color: #b4b0af;
   color: white;
-
 }
