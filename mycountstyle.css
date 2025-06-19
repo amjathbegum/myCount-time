@@ -152,5 +152,5 @@ ul li::before {
 .close:hover {
   background-color: #b4b0af;
   color: white;
-text-align: center;
+  text-align: center;
 }
