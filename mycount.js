@@ -9,6 +9,8 @@ let count = 0;
 
 
 
+
+
 increaseBtn.addEventListener('click', function () {
   count++;
 
@@ -35,16 +37,18 @@ increaseBtn.addEventListener('click', function () {
           
 
     
-  
+        
+      var span = document.createElement("SPAN");
       var txt = document.createTextNode("\u00D7");
-      myNum.className="close";
-      myNum.appendChild(txt);
-      numbernode.appendChild(myNum);
+      span.className="close";
+      span.appendChild(txt);
+      numbernode.appendChild(span);
+
  
       
      
-
- 
+     
+   
   
 
 
