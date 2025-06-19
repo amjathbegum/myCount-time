@@ -6,8 +6,7 @@ const myNum = document.getElementById("myNum");
 const myclose = document.getElementById("myclose");
 
 let count = 0;
-
-
+ 
 
 
 
@@ -44,9 +43,8 @@ increaseBtn.addEventListener('click', function () {
       span.appendChild(txt);
       numbernode.appendChild(span);
 
- 
-      
-     
+   
+       
      
    
   
@@ -58,7 +56,7 @@ increaseBtn.addEventListener('click', function () {
       closenode.appendChild(myclosetxt);
       document.getElementsById("myclose").appendChild(closenode);
       */
-     
+     /*
       document.getElementById("myNum").addEventListener("click", function () {
         var close = document.getElementsByClassName("close");
         var i;
