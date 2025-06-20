@@ -107,27 +107,30 @@ ul li {
     position: relative;
     padding: 12px 32px 12px;
     list-style-type: none;
-    background: #dfc8c8;
+    background: #eee;
     right: 40px;
     width: 250px;
     font-size: 18px;
     transition: 0.2s;
 }
-
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
 ul li:hover {
     background: #ddd;
 }
 
 ul li.checked {
-    background: #888;
-    color: #fff;
+    background: #c4a4a4;
+    color: #6ef8ac;
+    text-decoration: line-through;
 
 }
 
-ul li::before {
+ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: #fff;
+    border-color: #91ca82;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
@@ -138,7 +141,7 @@ ul li::before {
     
 }
 .close {
-    background-color: red;
+
     position: absolute;
     font-size: 30px;
     width:35px;
@@ -148,6 +151,6 @@ ul li::before {
     text-align: center;
 }
 .close:hover {
-  background-color: #b4b0af;
-  color: white;
+  background-color: red;
+  color: rgb(184, 149, 149);
 }
