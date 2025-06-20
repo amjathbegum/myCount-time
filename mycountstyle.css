@@ -114,9 +114,11 @@ ul li {
     transition: 0.2s;
     left: 12px;
 }
+
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+    background: #f9f9f9;
 }
+
 ul li:hover {
     background: #ddd;
 }
@@ -139,19 +141,21 @@ ul li.checked::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-    
+
 }
+
 .close {
 
     position: absolute;
     font-size: 30px;
-    width:35px;
-    height:35px;
-    right:0;
+    width: 35px;
+    height: 35px;
+    right: 0;
     top: 5px;
     text-align: center;
 }
+
 .close:hover {
-  background-color: red;
-  color: rgb(184, 149, 149);
+    background-color: red;
+    color: rgb(184, 149, 149);
 }
