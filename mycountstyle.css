@@ -124,7 +124,7 @@ ul li:hover {
 }
 
 ul li.checked {
-    background: #c4a4a4;
+    background: #f0e7e7;
     color: #6ef8ac;
     text-decoration: line-through;
 
@@ -157,5 +157,5 @@ ul li.checked::before {
 
 .close:hover {
     background-color: red;
-    color: rgb(184, 149, 149);
+    color: rgb(250, 247, 247);
 }
