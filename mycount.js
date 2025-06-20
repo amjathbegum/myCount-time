@@ -41,6 +41,7 @@ increaseBtn.addEventListener('click', function () {
       var txt = document.createTextNode("\u00D7");
       span.className="close";
       span.appendChild(txt);
+      node.appendChild(span);
       numbernode.appendChild(span);
 
    
@@ -61,10 +62,14 @@ increaseBtn.addEventListener('click', function () {
           close[i].onclick = function () {
             var div = this.parentElement;
             div.style.display = "none";
-
+          
           }
         }
       });
+
+
+     
+
 
 
 
