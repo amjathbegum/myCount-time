@@ -112,6 +112,7 @@ ul li {
     width: 250px;
     font-size: 18px;
     transition: 0.2s;
+    left: 12px;
 }
 ul li:nth-child(odd) {
   background: #f9f9f9;
