@@ -159,3 +159,8 @@ ul li.checked::before {
     background-color: red;
     color: rgb(250, 247, 247);
 }
+#myNum{
+   position: absolute;
+   right: 100px;
+ text-align: center;
+}
