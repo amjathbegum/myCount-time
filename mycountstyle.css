@@ -160,7 +160,7 @@ ul li.checked::before {
     color: rgb(250, 247, 247);
 }
 .num{
-   position: absolute;
+   position: relative;
    left: 30px;
 
 }
