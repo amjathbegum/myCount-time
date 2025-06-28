@@ -27,8 +27,8 @@ increaseBtn.addEventListener('click', function () {
       var txt = document.createTextNode("\u00D7");
       span.className = "close";
       span.appendChild(txt);
-      node.appendChild(span);
-      node.appendChild(span);
+     
+   
 
       document.getElementById("myList").appendChild(node);
       //const numbernode = document.createTextNode(count);
