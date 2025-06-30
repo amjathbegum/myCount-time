@@ -27,7 +27,8 @@ increaseBtn.addEventListener('click', function () {
       var txt = document.createTextNode("\u00D7");
       span.className = "close";
       span.appendChild(txt);
-     
+      span.appendChild(node);
+
    
 
       document.getElementById("myList").appendChild(node);
@@ -86,10 +87,6 @@ increaseBtn.addEventListener('click', function () {
           }
         }
       });
-
-
-
-
 
 
 

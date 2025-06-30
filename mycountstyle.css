@@ -108,11 +108,11 @@ ul li {
     padding: 12px 32px 12px;
     list-style-type: none;
     background: #eee;
-    right: 40px;
-    width: 450px;
+    right: 170px;
+    width: 650px;
     font-size: 18px;
     transition: 0.2s;
-    left: 12px;
+ 
 }
 
 ul li:nth-child(odd) {
