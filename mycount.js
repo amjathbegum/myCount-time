@@ -28,6 +28,7 @@ increaseBtn.addEventListener('click', function () {
       span.className = "close";
       span.appendChild(txt);
       span.appendChild(node);
+       
 
    
 
@@ -66,6 +67,13 @@ increaseBtn.addEventListener('click', function () {
       numbernode.appendChild(span);
 
 
+       const  ul =document.querySelector('.this-list');
+
+       for (let i=0;i<5;i++){
+        let li = document.createElement('li');
+        li.textContent = 'Item $ {i+1'
+       }
+      
 
 
       /*      
