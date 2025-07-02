@@ -28,6 +28,7 @@ increaseBtn.addEventListener('click', function () {
       span.className = "close";
       span.appendChild(txt);
       span.appendChild(node);
+    
        
 
    
@@ -35,7 +36,7 @@ increaseBtn.addEventListener('click', function () {
       document.getElementById("myList").appendChild(node);
       //const numbernode = document.createTextNode(count);
 
-
+     /*
       document.getElementById("myList").addEventListener("click", function () {
         var close = document.getElementsByClassName("close");
         var i;
@@ -48,7 +49,7 @@ increaseBtn.addEventListener('click', function () {
           }
         }
       });
-
+*/
 
 
       const numbernode = document.createElement("li");
@@ -66,13 +67,31 @@ increaseBtn.addEventListener('click', function () {
       node.appendChild(span);
       numbernode.appendChild(span);
 
+      
 
-       const  ul =document.querySelector('.this-list');
+     const ul = document.querySelector('.this-list');
 
-       for (let i=0;i<5;i++){
-        let li = document.createElement('li');
-        li.textContent = 'Item $ {i+1'
-       }
+     for(let i =0;i<5;i++){
+      let li = document.createElement('li');
+      li.textContent =  `close ${i+1}`;
+      ul.appendChild(li);
+     }
+
+     ul.addEventListener('click', function(e) {
+      this.removeChild(e.target);
+     })
+
+
+     
+
+
+
+ 
+
+
+
+
+      
       
 
 
@@ -82,7 +101,8 @@ increaseBtn.addEventListener('click', function () {
           closenode.appendChild(myclosetxt);
           document.getElementsById("myclose").appendChild(closenode);
           */
-
+      
+          /*
       document.getElementById("myNum").addEventListener("click", function () {
         var close = document.getElementsByClassName("close");
         var i;
@@ -95,7 +115,7 @@ increaseBtn.addEventListener('click', function () {
           }
         }
       });
-
+*/
 
 
       /*
