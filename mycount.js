@@ -85,12 +85,19 @@ increaseBtn.addEventListener('click', function () {
       ul.appendChild(li);
      }
 
-     ul.addEventListener('click', function(e) {
+    document.getElementById("myList").addEventListener('click', function(e) {
       this.removeChild(e.target);
      })
 
 
+
      
+
+
+
+ 
+
+
 
 
       
