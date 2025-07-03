@@ -108,7 +108,7 @@ ul li {
     padding: 12px 32px 12px;
     list-style-type: none;
     background: #eee;
-    right: 170px;
+    right: 30px;
     width: 650px;
     font-size: 18px;
     transition: 0.2s;
@@ -123,12 +123,7 @@ ul li:hover {
     background: #ddd;
 }
 
-ul li.checked {
-    background: #f0e7e7;
-    color: #6ef8ac;
-    text-decoration: line-through;
 
-}
 
 ul li.checked::before {
     content: '';

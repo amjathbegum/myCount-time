@@ -18,12 +18,13 @@ increaseBtn.addEventListener('click', function () {
     let numarr = numbers[i];
     if (count == numarr) {
 
-
+     
       var span = document.createElement("SPAN");
       const node = document.createElement("li");
       const d = new Date();
       const textnode = document.createTextNode(d.toLocaleTimeString());
       node.appendChild(textnode);
+
       var txt = document.createTextNode("\u00D7");
       span.className = "close";
       span.appendChild(txt);
@@ -66,14 +67,21 @@ increaseBtn.addEventListener('click', function () {
       span.appendChild(txt);
       node.appendChild(span);
       numbernode.appendChild(span);
+ 
+
+
+      const done = new Date();
+      const textnodeone = document.createTextNode(done.toLocaleTimeString());
+      node.appendChild(textnodeone);
+      node.appendChild(span);
+      node.appendChild(numbernode);
+     
 
       
-
      const ul = document.querySelector('.this-list');
 
      for(let i =0;i<5;i++){
       let li = document.createElement('li');
-      li.textContent =  `close ${i+1}`;
       ul.appendChild(li);
      }
 
@@ -83,12 +91,6 @@ increaseBtn.addEventListener('click', function () {
 
 
      
-
-
-
- 
-
-
 
 
       
