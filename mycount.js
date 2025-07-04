@@ -21,10 +21,11 @@ increaseBtn.addEventListener('click', function () {
      
       var span = document.createElement("SPAN");
       const node = document.createElement("li");
+      /*
       const d = new Date();
       const textnode = document.createTextNode(d.toLocaleTimeString());
       node.appendChild(textnode);
-
+*/
       var txt = document.createTextNode("\u00D7");
       span.className = "close";
       span.appendChild(txt);
@@ -64,12 +65,13 @@ increaseBtn.addEventListener('click', function () {
       var span = document.createElement("SPAN");
       var txt = document.createTextNode("\u00D7");
       span.className = "close";
+      span.id="closeset";
       span.appendChild(txt);
       node.appendChild(span);
       numbernode.appendChild(span);
  
 
-
+ 
       const done = new Date();
       const textnodeone = document.createTextNode(done.toLocaleTimeString());
       node.appendChild(textnodeone);
